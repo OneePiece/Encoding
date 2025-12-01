@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoding Analyzer</title>
+    <link rel="stylesheet" href="encoder_web_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encoding Analyzer</h1>
+
+        <div class="card">
+            <label>Upload File:</label>
+            <input type="file" id="fileInput" />
+        </div>
+
+        <div class="card">
+            <label>Atau Masukkan Teks:</label>
+            <textarea id="textInput" rows="4" placeholder="Masukkan teks di sini..."></textarea>
+        </div>
+
+        <div class="card">
+            <label>Pilih Metode:</label>
+            <select id="methodSelect">
+                <option value="sf">Shannon-Fano</option>
+                <option value="huffman">Huffman</option>
+                <option value="fixed">Fixed Length</option>
+            </select>
+        </div>
+
+        <button id="processBtn">Proses</button>
+        <button id="processAgainBtn" style="display:none;">Proses Lagi</button>
+
+        <h2>Hasil Tabel</h2>
+        <div id="resultTable"></div>
+
+        
+    </div>
+
+    <script src="encoder_web_script.js"></script>
+</body>
+</html>
